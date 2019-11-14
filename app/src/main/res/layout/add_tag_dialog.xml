@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="18dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_inner"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="4dp" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_height="match_parent">
+
+                        <com.nav.tagger.view.BoldTextView
+                            android:id="@+id/expName"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Add New TAG"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                        <com.nav.tagger.view.RegularEditText
+                            android:id="@+id/tag_name"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:background="@drawable/button_gradient"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:hint="Enter your Tag Name"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+                            <com.nav.tagger.view.RegularButton
+                                android:id="@+id/save"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:text="Save"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="35dp" />
+
+                            <com.nav.tagger.view.RegularButton
+                                android:id="@+id/cancel_action"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:text="Cancel"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="35dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

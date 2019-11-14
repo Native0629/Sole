@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_inner"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="4dp" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_height="match_parent">
+
+                        <com.nav.tagger.view.BoldTextView
+                            android:id="@+id/expName"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Success"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                        <com.nav.tagger.view.RegularTextView
+                            android:id="@+id/message_sucess"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text=""
+                            android:textSize="14sp" />
+
+
+                        <com.nav.tagger.view.RegularButton
+                            android:id="@+id/btn_yes"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:text="ok"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="35dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+<!--
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/check_mark"
+                    android:layout_height="60dp" />
+
+
+            </FrameLayout>
+-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/app"
+                    android:layout_gravity="center"/>
+
+
+                <com.nav.tagger.view.BoldTextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#21419a"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <com.nav.tagger.view.RegularTextView
+                    android:id="@+id/setPinText"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Pin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/topMarginmedium" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_pin_uncheck1"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_uncheck"
+                                android:layout_height="25dp" />
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/img_pin_check1"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_check"
+                                android:layout_height="25dp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"></View>
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_pin_uncheck2"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_uncheck"
+                                android:layout_height="25dp" />
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/img_pin_check2"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_check"
+                                android:layout_height="25dp" />
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"></View>
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_pin_uncheck3"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_uncheck"
+                                android:layout_height="25dp" />
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/img_pin_check3"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_check"
+                                android:layout_height="25dp" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"></View>
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_pin_uncheck4"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_uncheck"
+                                android:layout_height="25dp" />
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/img_pin_check4"
+                                android:layout_width="25dp"
+                                android:src="@drawable/outline_check"
+                                android:layout_height="25dp" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"></View>
+                </LinearLayout>
+
+
+                <com.nav.tagger.view.RegularTextView
+                    android:id="@+id/changePin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:text="Change Pin"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key1"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key2"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key3"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key4"
+                    android:layout_width="0dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key4"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key5"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key6"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key7"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key8"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key9"
+                    android:layout_width="0dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key9"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_keyped_key0"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_height="match_parent">
+                    <com.nav.tagger.view.BoldTextView
+                        android:id="@+id/btext_key0"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/topMarginmedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_img_cancil"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_cancil"
+                        android:layout_width="30dp"
+                        android:src="@drawable/delete_keyped"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ViewSwitcher
+            android:id="@+id/main_switcher"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/finger_blue"
+                tools:ignore="ContentDescription"/>
+
+            <!--
+                        <EditText
+                            android:id="@+id/pin_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:hint="Passcode"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:minEms="8"/>
+            -->
+        </ViewSwitcher>
+
+        <TextView
+            android:id="@+id/auth_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/go_to_settings_btn"
+            android:layout_gravity="center_horizontal"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Open Setting"
+            android:textColor="@color/black"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp">
+
+        </View>
+
+        <TextView
+            android:id="@+id/txt_cancil"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Cancel"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

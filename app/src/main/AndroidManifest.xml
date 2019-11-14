@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nav.tagger">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tagger"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PhotosActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.DashBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Activity.AllTagsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".view.KeyboardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.ViewImage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".VideoActivity"
+            android:screenOrientation="user"/>
+
+        <activity android:name=".Activity.AllTagImagesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.NonTagActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.ImageViewSliderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.SearchTagImageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity.TagByImageActicity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

@@ -1,5 +1,5 @@
 # Tagger
-http request sample
+photo gallery sample(Android localsqllite)
 
 ### Google Play Store URL:
 
